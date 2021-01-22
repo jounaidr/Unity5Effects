@@ -1,7 +1,7 @@
-using UnityEngine;
+/*using UnityEngine.UI;
 using System.Collections;
 
-[RequireComponent(typeof(GUIText))]
+[RequireComponent(typeof(UI.text))]
 public class FrameRateCounter : MonoBehaviour
 {
     public float m_update_interval = 0.5f;
@@ -36,4 +36,4 @@ public class FrameRateCounter : MonoBehaviour
             m_frames = 0;
         }
     }
-}
+}*/

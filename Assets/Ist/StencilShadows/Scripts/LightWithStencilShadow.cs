@@ -75,7 +75,7 @@ namespace Ist
             }
 
             var cam = Camera.current;
-            if (cam.hdr)
+            if (cam.allowHDR)
             {
                 m_light_material.SetInt("_SrcBlend", (int)BlendMode.One);
                 m_light_material.SetInt("_DstBlend", (int)BlendMode.One);
@@ -107,7 +107,7 @@ namespace Ist
             }
             commands.SetGlobalTexture("_Occulusion", id_occulusion);
 
-            if (cam.hdr)
+            if (cam.allowHDR)
             {
                 commands.SetRenderTarget(BuiltinRenderTextureType.CameraTarget);
             }
@@ -214,7 +214,7 @@ namespace Ist
             Camera cam = Camera.current;
 
             commands.Clear();
-            if (cam.hdr)
+            if (cam.allowHDR)
             {
                 commands.SetRenderTarget(BuiltinRenderTextureType.CameraTarget);
             }
